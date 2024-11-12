@@ -1,0 +1,3 @@
+1. Array is treated as a pointer in the function scope, not an array. 
+-> This means sizeof(array) returns the size of the pointer, not the number of elements in the array.
+
