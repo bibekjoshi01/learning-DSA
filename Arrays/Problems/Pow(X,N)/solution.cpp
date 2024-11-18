@@ -13,6 +13,26 @@ Instead of multiplying 2 by itself 9 times, we can use a shortcut method by "bre
 
 double calculate_pow(double x, int n)
 {
+
+    // handling corner cases
+    if (n == 0)
+        return 0.0;
+    if (x == 0)
+        return 0.0;
+    if (x == 1)
+        return 1.0;
+    if (x == -1 && n % 2 == 0)
+        return 1.0;
+    if (x == -1 && n % 2 != 0)
+        return -1.0;
+
+    // handling for negative powers
+    if (n < 0)
+    {
+        x = 1 / x;
+        n = abs(n);
+    }
+
     double result = 1;
     double base = x;
 
@@ -32,7 +52,7 @@ double calculate_pow(double x, int n)
 
 int main()
 {
-    double result = calculate_pow(5, 7);
+    double result = calculate_pow(5, -1);
     cout << "Result: " << result << endl;
 
     return 0;
