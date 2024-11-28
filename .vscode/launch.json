@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/my-repositories/learning-DSA/Arrays/Problems",
-      "program": "d:/my-repositories/learning-DSA/Arrays/Problems/build/Debug/outDebug",
+      "cwd": "d:/my-repositories/learning-DSA/Stack",
+      "program": "d:/my-repositories/learning-DSA/Stack/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
