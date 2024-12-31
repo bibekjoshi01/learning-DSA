@@ -58,6 +58,12 @@ void insertAtEnd(int data)
 
 void insertAtPos(int data, int pos)
 {
+    if (pos < 1)
+    {
+        printf("Invalid postion ! \n");
+        return;
+    }
+
     Node *new_node = createNode(data);
     if (head == NULL)
     {

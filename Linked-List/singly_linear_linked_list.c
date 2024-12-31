@@ -121,9 +121,9 @@ int main()
     head = insertAtEnd(head, 7);
     head = insertAtEnd(head, 4);
     displayList(head);
-    // searchList(head, 5);
-    // searchList(head, 4);
-    // printf("Length of Linked List is %d\n", lengthList(head));
+    searchList(head, 5);
+    searchList(head, 4);
+    printf("Length of Linked List is %d\n", lengthList(head));
 
     return 0;
 }
