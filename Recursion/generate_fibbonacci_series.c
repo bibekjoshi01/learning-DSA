@@ -23,6 +23,16 @@
 //     }
 // }
 
+int fibonacci_tail(int n, int a, int b)
+{
+
+    printf("%d\t", a);
+    if (n == 0 || n == 1)
+        return n;
+
+    return fibonacci_tail(n - 1, b, a + b);
+}
+
 int generateFibonacciSeries(int n)
 {
     if (n == 0 || n == 1)
@@ -44,5 +54,6 @@ int main()
     {
         printf("%d\t", generateFibonacciSeries(i));
     }
+    fibonacci_tail(10, 0, 1);
     return 0;
 }

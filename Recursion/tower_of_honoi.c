@@ -22,6 +22,6 @@ int main()
     int n;
     printf("Enter the number of disc: ");
     scanf("%d", &n);
-    towerOfHonoi(n, 'A', 'C', 'B');
+    towerOfHonoi(n, 'S', 'D', 'A');
     return 0;
 }
